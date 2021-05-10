@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,38 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.navBar{
+  width: 100%;
+  background-color: blue;
+  height: 50px;
+  top: 0px;
+  position: fixed;
+  
+}
+.navBar li{
+  display: inline;
+  margin: 15px;
+  text-align: center;
+  color: rgba(202, 190, 190, 0.678);
+}
+.navBar a{
+
+  color: rgba(202, 190, 190, 0.678);
+}
+body{
+  margin-top: 50px;
+}
+.ToDoBody h1{
+  width: 75%;
+  background-color: grey;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  
+
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
