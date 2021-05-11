@@ -1,5 +1,16 @@
+
+
 export default function Home(){
-    return (
-        <h1>Welcome to the Homepage</h1>
-    )
+  
+
+  return(
+    <>
+    <div className="HomeDiv">
+      <h1>
+       Welcome to my To Do List website!
+      </h1>
+      </div>
+    
+    </>
+  );
 }
