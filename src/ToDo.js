@@ -44,7 +44,7 @@ export default function ToDo(){
       </div>
       <ToDoForm />
       {list.map(item => (
-          <ToDoItem todo={item} />
+          <ToDoItem key={item.id} todo={item} />
       ))}
     </>
   );
