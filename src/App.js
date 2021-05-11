@@ -1,4 +1,4 @@
-import { Switch, Route} from 'react-router-dom';
+import {Switch, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import Home from './Home.js';
 import AboutMe from './AboutMe';
@@ -8,13 +8,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav className ="navBar"><ul>
-        <li><a href="/">Home</a></li>
-          <li><a href="/AboutMe">About Me</a></li>
-          <li><a href="/ToDo">To Do List</a></li>
+        <nav className = "navBar">
+          <ul>
+            <li><NavLink to = "/" exact>Home</NavLink></li>
+            <li><NavLink to = "/AboutMe">About Me</NavLink></li>
+            <li><NavLink to = "/ToDo">To Do List</NavLink></li>
           </ul>
-          </nav>
+        </nav>
+
       </header>
+      
       <main>
         <Switch>
           <Route path="/" exact>
@@ -27,7 +30,8 @@ function App() {
             <ToDo />
           </Route>
         </Switch>
-      </main>
+      </main>    
+
     </div>
   );
 }
