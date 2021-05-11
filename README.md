@@ -2,7 +2,21 @@
 
 For this lab we needed to re-create a webpage we were given using React. I did my best, and got my Homepage, About-me page, and the Todo page setup. 
 
+# Lab 37
+Technical Requirements / Notes  
+Technical requirements for the core application are unchanged from Phase 1, with the following exceptions and notes:  
 
+Manage state using the useState() hook  
+Match the provided mockup for the design  
+Use react-bootstrap components and theming  
+Some interactivity notes:  
+Each item in list should show the text of the item as well as the assignee  
+When clicked, toggle the “complete” status of the item.  
+Items should be styled differently when complete/incomplete making their status visually obvious  
+Stretch Goals  
+Use useLocalStorage to persist todos in localStorage  
+Allow the user to dynamically sort to do items by date, difficulty, or assignee  
+Allow the user to filter to do items by date, difficulty, or assignee  
 
 
 <!-- # Getting Started with Create React App
