@@ -19,6 +19,10 @@ Allow the user to dynamically sort to do items by date, difficulty, or assignee
 Allow the user to filter to do items by date, difficulty, or assignee  
 
 
+# Lab 38
+Assignment page will not load,
+Today I created a log in button. 
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
