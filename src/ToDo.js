@@ -1,4 +1,7 @@
 import Badge from 'react-bootstrap/Badge';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import ToDoForm from './ToDoForm';
 import ToDoItem from './ToDoItem';
 
@@ -39,13 +42,19 @@ export default function ToDo(){
   return(
     <>
     
-     <div className="wrapper">
+     <Container className='wrapper'>
       <h1> To Do List Manager <Badge variant="secondary">({incompleteCount})</Badge></h1>
-      </div>
-      <ToDoForm />
-      {list.map(item => (
-          <ToDoItem key={item.id} todo={item} />
-      ))}
+      <Row>
+        <Col md={6} lg={4}>
+          <ToDoForm />
+        </Col>
+        <Col md={6} lg={8}>
+          {list.map(item => (
+              <ToDoItem key={item.id} todo={item} />
+          ))}
+        </Col>
+      </Row>
+     </Container>
     </>
   );
 }
