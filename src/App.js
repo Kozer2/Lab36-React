@@ -5,10 +5,12 @@ import AboutMe from './AboutMe';
 import ToDo from './ToDo';
 import {useState} from 'react';
 import NavLogin from './NavLogin';
+import Login from './auth/Login';
+
 
 
 function App() {
-  const [user, setUser] = useState({name: 'Ben'});
+  const [user, setUser] = useState();
   return (
     <div className="App">
       <header className="App-header">
@@ -37,6 +39,9 @@ function App() {
           </Route>
           <Route path="/ToDo">
             <ToDo />
+          </Route>
+          <Route path="/Login">
+            <Login />
           </Route>
         </Switch>
       </main>    

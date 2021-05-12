@@ -1,15 +1,22 @@
 import {NavLink } from 'react-router-dom';
-export default function NavLogin(props){
-    const {user} = props;
-    if(user){
+import {useAuth} from './contexts/auth';
+
+export default function NavLogin(props) {
+    const auth = useAuth();
+    console.log(auth);
+    const { user } = auth;
+    console.log(user);
+
+    if (user) {
         return (
-            <li className="mr-auto">{user.name}</li>
+            <li>{user.username}</li>
         );
     }
+
     return (
         <>
-        <li className="ml-auto" ><NavLink to = "/Login">Login</NavLink></li>
-        <li className="ml-auto"><NavLink to = "/Register">Register</NavLink></li>
+          <li><NavLink to="/Login">Login</NavLink></li>
+          <li><NavLink to="/register">Register</NavLink></li>
         </>
-    );
+    )
 }
