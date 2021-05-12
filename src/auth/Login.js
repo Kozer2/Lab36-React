@@ -9,7 +9,7 @@ export default function Login() {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="loginForm" onSubmit={handleSubmit}>
           <label>Username <input type="text" name="username" /></label>
           <label>Password <input type="password" name="password" /></label>
           <button>Log In</button>
