@@ -51,6 +51,7 @@
   margin: 15px;
   text-align: center;
   color: rgba(202, 190, 190, 0.678);
+  font-size: 25px;
 }
 .navBar a{
 
@@ -108,4 +109,16 @@ html{
 main
 {
   background-color: whitesmoke;
+}
+
+.AboutMeBody
+{
+  margin-top:50px;
+}
+
+.loginForm{
+  margin-top: 100px;
+}
+.logout{
+  margin-top: 100px;
 }
