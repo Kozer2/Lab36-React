@@ -45,6 +45,7 @@ export default function ToDo(){
     
      <Container className='wrapper'>
      <Auth className="auth">Welcome Authorized User!</Auth>
+     <Auth permission='create'>
       <h1> To Do List Manager <Badge variant="secondary">({incompleteCount})</Badge></h1>
       <Row>
         <Col md={6} lg={4}>
@@ -56,6 +57,7 @@ export default function ToDo(){
           ))}
         </Col>
       </Row>
+      </Auth>
      </Container>
     </>
   );
