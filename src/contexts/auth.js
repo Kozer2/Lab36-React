@@ -46,7 +46,9 @@ export function AuthProvider(props) {
     }
 
     function setUser(user) {
-        
+        if(!user) 
+         return null;
+
         user = processToken(user);
 
         setState(prevState => ({
@@ -63,6 +65,7 @@ export function AuthProvider(props) {
     );
 }
 
+// decode what is in the token
 function processToken(user) {
     if (!user)
       return null;

@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ToDoForm from './ToDoForm';
 import ToDoItem from './ToDoItem';
+import Auth from './auth';
 
 const list = [
     {
@@ -43,6 +44,7 @@ export default function ToDo(){
     <>
     
      <Container className='wrapper'>
+     <Auth className="auth">Welcome Authorized User!</Auth>
       <h1> To Do List Manager <Badge variant="secondary">({incompleteCount})</Badge></h1>
       <Row>
         <Col md={6} lg={4}>
