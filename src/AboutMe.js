@@ -1,9 +1,11 @@
-
+import image from './assets/image.jpg'
 export default function AboutMe(){
   return (
+    
     <div className="AboutMeBody">
     <body>
       <h1>About me</h1>
+      <img src={image} height={200} width={200} alt="Profile "></img>
     <p>My name is Ben Hemann and this is my first website built with React</p>
     <div className="aboutMeLinks">
       <h5>Important Links:</h5>
