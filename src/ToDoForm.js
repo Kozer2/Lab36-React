@@ -11,6 +11,7 @@ export default function ToDoForm(props) {
         const difficulty = parseInt(e.target.slider.value);
 
         const newTodo = {
+          id: Date.now(),
           title,
           assignedTo,
           difficulty,
