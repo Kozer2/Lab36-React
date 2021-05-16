@@ -1,12 +1,26 @@
 import { Form, Button } from 'react-bootstrap';
 import {useState} from 'react'; 
 
-export default function ToDoForm() {
+export default function ToDoForm(props) {
   // const [item, setItem] = useState();
     const handleSubmit = e => {
         e.preventDefault();
      
-        console.log(e.target.ToDoItem.value, e.target.ToDoAssigned.value, e.target.slider.value);
+        const title = e.target.ToDoItem.value;
+        const assignedTo = e.target.ToDoAssigned.value;
+        const difficulty = parseInt(e.target.slider.value);
+
+        const newTodo = {
+          id: Date.now(),
+          title,
+          assignedTo,
+          difficulty,
+          completed: false,
+        };
+
+        console.log(newTodo);
+
+        props.onSave(newTodo);
         
     };
     // const handleSave = (item) => setItem(item.concat(item));

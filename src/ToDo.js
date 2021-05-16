@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Badge from 'react-bootstrap/Badge';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -38,7 +39,14 @@ const list = [
 ];
 
 export default function ToDo(){
-  const incompleteCount = list.filter(todo => !todo.completed).length;
+  const [todos, setTodos] = useState(list);
+
+  const incompleteCount = todos.filter(todo => !todo.completed).length;
+
+  function handleSave(todo){
+    console.log('saving!', todo);
+    setTodos(todos.concat(todo));
+  }
 
   return(
     <>
@@ -49,10 +57,10 @@ export default function ToDo(){
       <h1> To Do List Manager <Badge variant="secondary">({incompleteCount})</Badge></h1>
       <Row>
         <Col md={6} lg={4}>
-          <ToDoForm />
+          <ToDoForm onSave={handleSave} />
         </Col>
         <Col md={6} lg={8}>
-          {list.map(item => (
+          {todos.map(item => (
               <ToDoItem key={item.id} todo={item} />
           ))}
         </Col>

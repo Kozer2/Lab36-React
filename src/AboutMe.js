@@ -3,7 +3,6 @@ export default function AboutMe(){
   return (
     
     <div className="AboutMeBody">
-    <body>
       <h1>About me</h1>
       <img src={image} height={200} width={200} alt="Profile "></img>
     <p>My name is Ben Hemann and this is my first website built with React</p>
@@ -19,7 +18,6 @@ export default function AboutMe(){
       <li><a href="https://digitalarthub.azurewebsites.net">Digital ArtHub Project</a></li>
       </ul>
     </div>
-    </body>
     </div>
   )
 }
