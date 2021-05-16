@@ -23,6 +23,11 @@ Allow the user to filter to do items by date, difficulty, or assignee
 Assignment page will not load,
 Today I created a log in button. 
 
+# Final
+The final version of the product allows a user to sign in and create and assign tasks that need to be done. Currently I am working to try and get the user the ability to mark a task as completed
+
+<!-- https://www.youtube.com/watch?v=leb00DWnvDw&list=PLnobwbmmCilQas7kYvy-0WIEXHcNkHdo9&index=92 -->
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
